@@ -164,7 +164,7 @@
 
                 <div class="input-row">
                     <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required value=<%= session.getAttribute("email") %>>
                 </div>
 
                 <div class="input-row">
