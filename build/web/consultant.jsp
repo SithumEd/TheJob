@@ -109,7 +109,7 @@
         <td><%= rs.getString("time") %></td>
         <td><%= rs.getString("consultant") %></td>
         <td><%= rs.getString("message") %></td>
-        <td><a id="btnApprove" href="DeleteAppointment?email=<%= rs.getString("email") %>">Accept</a></td>
+        <td><a id="btnApprove" href="approveAppointment?email=<%= rs.getString("email") %>">Accept</a></td>
     </tr>
     <%
             }
