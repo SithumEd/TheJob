@@ -44,9 +44,9 @@
         }
 
         nav ul {
-                    list-style: none;
-                    display: flex;
-                    justify-content: center;
+            list-style: none;
+            display: flex;
+            justify-content: center;
         }
 
         nav li {
@@ -63,9 +63,9 @@
         }
 
         .dropdown {
-                  position: relative;
-                  display: inline-block;
-              }
+            position: relative;
+            display: inline-block;
+         }
 
         .dropdown-content {
             display: none;
@@ -92,11 +92,11 @@
         }
 
          footer {
-                    text-align: center;
-                    margin-top: 100px;
-                    padding-top: 10px;
-                    border-top: 1px solid #ccc;
-                }
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
+        }
 
         
     </style>
