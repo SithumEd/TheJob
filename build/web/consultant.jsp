@@ -79,7 +79,7 @@
 </head>
 <body>
     <h1 style="text-align: center">Appointment Details</h1>
-    <form action="searchAppointmentRes" method="GET">
+    <form action="searchAppointmentCon" method="GET">
         <input type="text" id="txtEmail" name="email" placeholder="Enter Email">
         <button class="Btn" type="submit">Search</button>
     </form>

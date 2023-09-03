@@ -11,8 +11,12 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.sql.*;
+import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jakarta.mail.*;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeMessage;
 /**
  *
  * @author HP
@@ -56,7 +60,31 @@ public class MakeAppointment extends HttpServlet {
                 int rowsInserted = statement.executeUpdate();
                 if (rowsInserted > 0) {
                     // Appointment inserted successfully
-                    out.println("<script>alert('Successful')</script>");
+                    out.println("<!DOCTYPE html>");
+                        out.println("<html>");
+                        out.println("<head>");
+                        out.println("<link rel=\"stylesheet\" href=\"styles.css\">");
+                        out.println("</head>");
+                        out.println("<body>");
+
+                        out.println("<script src=\"https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.all.min.js\"></script>");
+                        out.println("<link href=\"https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css\" rel=\"stylesheet\">");
+                        out.println("<script>");
+                        out.println("Swal.fire({");
+                        out.println("  title: 'Success!',");
+                        out.println("  text: 'Appointment Made Successfully!',");
+                        out.println("  icon: 'success',");
+                        out.println("  confirmButtonText: 'Ok'");
+                        out.println("}).then((result) => {");
+                        out.println("  if (result.isConfirmed) {");
+                        out.println("    window.location.href = 'bookAppointment.jsp';"); // Change to your homepage URL
+                        out.println("  }");
+                        out.println("});");
+                        out.println("</script>");
+
+                        out.println("</body>");
+                        out.println("</html>");
+                    
                 } else {
                     // Something went wrong
                     out.println("<script>alert('Failed')</script>");
@@ -72,7 +100,7 @@ public class MakeAppointment extends HttpServlet {
             }
         }
     }
-
+   
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -87,7 +115,7 @@ public class MakeAppointment extends HttpServlet {
             throws ServletException, IOException {
         processRequest(request, response);
     }
-
+    
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -113,3 +141,4 @@ public class MakeAppointment extends HttpServlet {
     }// </editor-fold>
 
 }
+
