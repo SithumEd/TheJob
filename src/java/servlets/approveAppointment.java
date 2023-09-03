@@ -12,6 +12,10 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import jakarta.mail.*;
+import jakarta.mail.internet.InternetAddress;
+import jakarta.mail.internet.MimeMessage;
+import java.util.Properties;
 
 /**
  *
@@ -33,24 +37,29 @@ public class approveAppointment extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-             String emailToDelete = request.getParameter("email");
+             String email = request.getParameter("email");
+             String name = request.getParameter("name");
         
-        if (emailToDelete != null && !emailToDelete.isEmpty()) {
+        if (email != null && !email.isEmpty()) {
             try {
                 Connection conn = DBconn.getConnection();
                 String sql = "DELETE FROM appointments WHERE email = ?";
                 PreparedStatement ps = conn.prepareStatement(sql);
-                ps.setString(1, emailToDelete);
+                ps.setString(1, email);
                 ps.executeUpdate();
                 conn.close();
                 
+                              
                 response.sendRedirect("consultant.jsp");
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+        
     }
     }
+    
+    
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -91,4 +100,5 @@ public class approveAppointment extends HttpServlet {
     }// </editor-fold>
 
 }
+    
 

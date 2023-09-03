@@ -40,6 +40,10 @@
         <servlet-name>approveAppointment</servlet-name>
         <servlet-class>servlets.approveAppointment</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>searchAppointmentCon</servlet-name>
+        <servlet-class>servlets.searchAppointmentCon</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>signUp</servlet-name>
         <url-pattern>/signUp</url-pattern>
@@ -79,5 +83,9 @@
     <servlet-mapping>
         <servlet-name>approveAppointment</servlet-name>
         <url-pattern>/approveAppointment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>searchAppointmentCon</servlet-name>
+        <url-pattern>/searchAppointmentCon</url-pattern>
     </servlet-mapping>
 </web-app>

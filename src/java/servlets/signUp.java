@@ -65,7 +65,6 @@ public class signUp extends HttpServlet {
                         out.println("<!DOCTYPE html>");
                         out.println("<html>");
                         out.println("<head>");
-                        out.println("<title>Your Page Title</title>");
                         out.println("<link rel=\"stylesheet\" href=\"styles.css\">");
                         out.println("</head>");
                         out.println("<body>");
