@@ -1,6 +1,6 @@
 <%-- 
-    Document   : homePage
-    Created on : Aug 20, 2023, 6:34:04 PM
+    Document   : contactUs
+    Created on : Sep 3, 2023, 1:38:24 PM
     Author     : HP
 --%>
 
@@ -10,20 +10,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Jobs Consultation Centre</title>
+    <title>Contact Us</title>
     <style>
         
-        
-        body, h1, h2, p, ul, li {
+        body, h1, p, ul, li {
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
         }
 
         header {
             background-color: #007bff;
             color: #fff;
             padding: 10px 0;
-            opacity: 80%;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
         }
 
         nav ul {
@@ -35,40 +52,20 @@
         nav li {
             margin: 0 55px;
         }
-        
+
         nav a {
             text-decoration: none;
             color: #fff;
         }
 
-        .intro {
-            background-image: url('images/bg1.jpg');
-            background-size: cover;
-            background-position: center; 
-            text-align: center;
-            padding: 200px 0;
-        }
-        .intro-content {
-            background-color: rgba(0, 0, 0, 0.8); 
-            padding: 20px;
-            border-radius: 10px; 
-            color: #fff;
-            display: inline-block;
-        }
-        .features {
-            display: flex;
-            justify-content: center;
-            padding: 50px 0;
+        h2 {
+            color: #007bff;
         }
 
-        .feature {
-            text-align: center;
-            margin: 0 20px;
-        }
         .dropdown {
             position: relative;
             display: inline-block;
-        }
+         }
 
         .dropdown-content {
             display: none;
@@ -88,21 +85,17 @@
             text-decoration: none;
             color: black;
         }
-        footer {
-            text-align: center;
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid #ccc;
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
         }
 
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav li {
-                margin: 10px 0;
-            }
+         footer {
+            text-align: center;
+            margin-top: 100px;
+            padding-top: 10px;
+            border-top: 1px solid #ccc;
         }
 
         
@@ -110,6 +103,7 @@
 </head>
 <body>
     <header>
+        <h1>Contact Us</h1><br>
         <nav>
             <ul>
                 <li><a href="homePage.jsp">Home</a></li>
@@ -126,33 +120,18 @@
             </ul>
         </nav>
     </header>
-    
-    <section class="intro">
-        <div class="intro-content">
-            <h1 style="font-size: 30px">Welcome to The Jobs Consultation Centre</h1>
-            <p>Your gateway to career success.</p>
-            
-        </div>
-    </section>
-    
-    <section class="features">
-        <div class="feature">
-            <h2>Expert Consultation</h2>
-            <p>Our experienced consultants provide expert advice to help you make informed career decisions.</p>
-        </div>
-        <div class="feature">
-            <h2>Job Opportunities</h2>
+
+    <div class="container">
+        <section class="about">
+            <h2>Jobs Consultant Center</h2>
             <p>Discover a wide range of job opportunities that match your skills and aspirations.</p>
-        </div>
-        <div class="feature">
-            <h2>Resume Building</h2>
-            <p>We offer assistance in creating compelling resumes that stand out to potential employers.</p>
-        </div>
-    </section>
-    
+            <p>Contact Us at TheJobs@gmail.com</p>
+            <p>Or at 0714569371</p>
+        </section>
+    </div>
+
     <footer>
-            <p>&copy; The Jobs Consultation Centre. Made By Sithum Edirisinghe (CL/BSCSD/26/100).</p>
+        <p>&copy; The Jobs Consultation Centre. Made By Sithum Edirisinghe (CL/BSCSD/26/100).</p>
     </footer>
 </body>
 </html>
-
