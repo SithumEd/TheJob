@@ -113,7 +113,7 @@
         <nav>
             <ul>
                 <li><a href="homePage.jsp">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="about.jsp">About Us</a></li>
                 <li class="dropdown">
                     <span>Services</span>
                     <div class="dropdown-content">
