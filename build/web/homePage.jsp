@@ -120,7 +120,7 @@
                         <a href="bookAppointment.jsp">Book an Appointment</a>
                     </div>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contactUs.jsp">Contact</a></li>
                 <li><a href="index.jsp">Logout</a></li>
                 <li>Welcome <%= session.getAttribute("email") %>!</li>
             </ul>
