@@ -131,15 +131,14 @@
         <nav>
             <ul>
                 <li><a href="homePage.jsp">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="about.jsp">About Us</a></li>
                 <li class="dropdown">
                     <span>Services</span>
                     <div class="dropdown-content">
-                        <a href="bookAppointment.jsp">View Job Offers</a>
-                        <a href="#s2">Book an Appointment</a>
+                        <a href="bookAppointment.jsp">Book An Appointment</a>
                     </div>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contactUs.jsp">Contact</a></li>
                 <li><a href="index.jsp">Logout</a></li>
                 <li>Welcome <%= session.getAttribute("email") %>!</li>
             </ul>
