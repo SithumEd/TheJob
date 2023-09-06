@@ -114,7 +114,7 @@
                         <a href="bookAppointment.jsp">Book an Appointment</a>
                     </div>
                 </li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contactUs.jsp">Contact</a></li>
                 <li><a href="index.jsp">Logout</a></li>
                 <li>Welcome <%= session.getAttribute("email") %>!</li>
             </ul>
@@ -127,7 +127,9 @@
             <p>Discover a wide range of job opportunities that match your skills and aspirations.</p>
         </section>
     </div>
+            <iframe width="770" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=colombo tobiko&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 
+            </iframe>
     <footer>
         <p>&copy; The Jobs Consultation Centre. Made By Sithum Edirisinghe (CL/BSCSD/26/100).</p>
     </footer>
