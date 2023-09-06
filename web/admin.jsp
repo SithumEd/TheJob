@@ -12,6 +12,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Admin</title>
         <link rel="stylesheet" href="styles.css"/>
+        <style>
+            
+            body{
+                background-image: url('images/bg1.jpg');
+            background-size: cover;
+            background-position: center; 
+            text-align: center;
+            }
+            footer{
+                color: white;
+            }
+        </style>
         <script>
             
             function openUserDetails(){
